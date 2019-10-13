@@ -611,6 +611,10 @@ input::placeholder {
     align-items: center;
 }
 
+.c-form-field__relative {
+    position: relative;
+}
+
 /*
     Component: Input
     ---
@@ -681,6 +685,22 @@ more padding on the right to avoid overlap
 
 .c-label--option {
     padding-bottom: 0;
+}
+
+.c-label__absolute {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    padding: 4px 8px;
+    will-change: transform;
+    transform: translateY( 0 );
+    transition: transform 200ms ease-in-out;
+    box-shadow: 0 0 4px 4px rgba(255,255,255,0.8);
+    background: white;
+}
+
+.c-label__absolute:focus {
+    transform: translateY( -24px ); 
 }
 
 /*
